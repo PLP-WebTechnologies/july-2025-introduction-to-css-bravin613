@@ -1,0 +1,268 @@
+        /*Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #2d5016;
+            background-color: #f8fdf4;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #2d5016, #4a7c3a);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border-bottom: 5px solid #1a3009;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: #4a7c3a;
+            padding: 0;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav li {
+            margin: 0;
+        }
+
+        .nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            transition: background-color 0.3s ease;
+            border-right: 1px solid #2d5016;
+        }
+
+        .nav a:hover {
+            background-color: #2d5016;
+        }
+
+        .nav li:last-child a {
+            border-right: none;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Main Content Grid */
+        .content-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .main-content {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        /* Card Components - Box Model */
+        .card {
+            background-color: white;
+            border: 2px solid #4a7c3a;
+            border-radius: 12px;
+            padding: 25px; 
+            margin-bottom: 25px; 
+            box-shadow: 0 6px 12px rgba(77, 124, 58, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(77, 124, 58, 0.25);
+        }
+
+        .card h2 {
+            color: #2d5016;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #90c695;
+        }
+
+        .card h3 {
+            color: #4a7c3a;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            margin-top: 20px;
+        }
+
+        .card p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        /* Benefits List */
+        .benefits-list {
+            background-color: #e8f5e8;
+            border-left: 6px solid #4a7c3a;
+            padding: 20px 25px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .benefits-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .benefits-list li {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 12px 18px;
+            border-radius: 6px;
+            border-left: 4px solid #90c695;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .benefits-list li:before {
+            content: "🌱 ";
+            margin-right: 8px;
+        }
+
+        /* AI Impact Section */
+        .ai-section {
+            background: linear-gradient(135deg, #e3f2fd, #f0f8f0);
+            border: 2px dashed #4a7c3a;
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .ai-section::before {
+            content: "🤖";
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background-color: #f0f8f0;
+            padding: 5px 10px;
+            font-size: 1.5rem;
+        }
+
+        .ai-section h3 {
+            color: #1976d2;
+            margin-top: 10px;
+        }
+
+        /* Statistics Box */
+        .stats-box {
+            background-color: #2d5016;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+            border: 3px solid #4a7c3a;
+        }
+
+        .stats-box .stat {
+            display: inline-block;
+            margin: 10px 20px;
+            padding: 15px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            min-width: 120px;
+        }
+
+        .stats-box .number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+            color: #90c695;
+        }
+
+        /* Action Buttons */
+        .action-button {
+            display: inline-block;
+            background-color: #4a7c3a;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            margin: 10px 10px 10px 0;
+            border-radius: 6px;
+            border: 2px solid #2d5016;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .action-button:hover {
+            background-color: #2d5016;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(45, 80, 22, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2d5016;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            border-top: 5px solid #4a7c3a;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content-grid {
+                flex-direction: column;
+            }
+            
+            .nav ul {
+                flex-direction: column;
+            }
+            
+            .nav a {
+                border-right: none;
+                border-bottom: 1px solid #2d5016;
+            }
+            
+            .stats-box .stat {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    
